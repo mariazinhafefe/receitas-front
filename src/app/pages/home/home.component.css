@@ -1,0 +1,24 @@
+#navbar-principal {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+#toolbar-logo {
+    max-height: 35px;
+    margin-right: 15px;
+}
+
+.menu-logo {
+    max-height: 30px;
+}
+
+#content {
+    padding: 65px 20px 30px 20px;
+}
+
+#progresso {
+    margin-top: 64px;
+    z-index: 101;
+    position: fixed;
+}

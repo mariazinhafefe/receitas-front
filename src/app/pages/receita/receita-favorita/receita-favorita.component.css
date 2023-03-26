@@ -1,0 +1,25 @@
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    max-width: 400px;
+    margin: 1rem;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+@media (min-width: 768px) {
+    .card {
+        width: calc(33.33% - 2rem);
+    }
+}
+
+img {
+    width: -webkit-fill-available;
+}

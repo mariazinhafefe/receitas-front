@@ -1,0 +1,30 @@
+<div class="card-container" style="background-color: white">
+    <form [formGroup]="formLogin">
+        <mat-card style="background-color: #f7eadc;  color: #f9655d;" class="mat-elevation-z6 card">
+            <div fxLayout="column">
+                <div id="logo" class="background-primary" fxLayoutAlign="center center" fxFlex="100" fxFill>
+                    <img src="../../../assets/imagens/logo.png" />
+                </div>
+                <mat-form-field appearance="legacy" fxFlex="100">
+                    <mat-label>login</mat-label>
+                    <input matInput placeholder="" id="usuario" name="login" formControlName="login">
+                    <mat-icon matSuffix class="color-primary">perm_identity</mat-icon>
+                </mat-form-field>
+
+                <mat-form-field appearance="legacy" fxFlex="100">
+                    <mat-label>senha</mat-label>
+                    <input matInput type="password" placeholder="" id="senha" name="senha" formControlName="senha">
+                    <mat-icon matSuffix class="color-primary">lock</mat-icon>
+                </mat-form-field>
+                <div fxFlex="100">
+                    <button id="btn-entrar" fxFill mat-raised-button style="background-color: #f9655d;  color: white;" [disabled]=" !formLogin.valid " (click)="entrar() ">Entrar</button>
+
+                </div>
+
+            </div>
+
+
+
+        </mat-card>
+    </form>
+</div>
